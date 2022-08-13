@@ -26,8 +26,20 @@ li{
     list-style-type: none;
 }
 
+.container{
+    padding: 50px 0;
+}
+
 .text--purple{
     color: #6030b1;
+}
+
+section:nth-child(even){
+    background-color: #f8f8f8;  /* This targets all the even sections */
+}
+
+.section__title{
+    margin-bottom: 20px;
 }
 
 /* Navigation Bar*/
@@ -86,6 +98,11 @@ background-color: #5d3eff;
     flex-direction: column;
 }
 
+.about-me__info{
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-flex{
     display: flex;
 }
@@ -123,4 +140,28 @@ background-color: #5d3eff;
 .about-me__info--para{
     font-size: 20px;
     margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container{
+    flex: 1;          /* makes figure the entire height of the page*/
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img{
+    width: 100%;
+}
+
+/* Tech Stack */
+
+.language__img{
+    width: 100%;
+    max-width: 100px;
 }
